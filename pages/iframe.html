@@ -1,1 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>iFrame</title>
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <header>
+    <h1>iFrame</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="audio.html">Audio</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="iframe.html">iFrame</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section>
+      <h2>Sitio embebido</h2>
+      <iframe src="https://www.example.com" width="700" height="400" title="Sitio embebido"></iframe>
+
+      <h2>YouTube</h2>
+      <!-- En YouTube: Compartir → Insertar → copia el iframe. Reemplaza VIDEO_ID. -->
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="YouTube" frameborder="0" allowfullscreen>
+      </iframe>
+
+      <h2>Google Maps</h2>
+      <!-- En Google Maps: Compartir → Insertar un mapa → copia el iframe completo. -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=..."
+        width="560" height="315" style="border:0;" loading="lazy" allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade" title="Mapa">
+      </iframe>
+    </section>
+
+    <aside>
+      <h3>Notas</h3>
+      <p>Algunos sitios bloquean el embebido por políticas de seguridad.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <small>SC-403 — Diana Matamoros</small>
+  </footer>
+</body>
+</html>
